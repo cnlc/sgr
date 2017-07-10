@@ -21,6 +21,15 @@ public class Apartamento implements Serializable{
         this.ref_quarto = ref_quarto;
     }
 
+    public Apartamento(int numQuartos, String area, String piso, String tipo, String descricao, String ref_quarto) {
+        this.numQuartos = numQuartos;
+        this.area = area;
+        this.piso = piso;
+        this.tipo = tipo;
+        this.descricao = descricao;
+        this.ref_quarto = ref_quarto;
+    }
+
     public Apartamento(int id, int numQuartos, String area, String piso, String tipo, String descricao, String ref_quarto) {
         this.id = id;
         this.numQuartos = numQuartos;

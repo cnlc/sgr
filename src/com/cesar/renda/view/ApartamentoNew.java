@@ -5,6 +5,9 @@
  */
 package com.cesar.renda.view;
 
+import com.cesar.renda.bean.Apartamento;
+import com.cesar.renda.controller.ApartamentoController;
+
 /**
  *
  * @author cesar
@@ -68,6 +71,11 @@ public class ApartamentoNew extends javax.swing.JInternalFrame {
 
         btnGuardar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/cesar/renda/view/icon/save_24.png"))); // NOI18N
         btnGuardar.setText("Guardar");
+        btnGuardar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnGuardarActionPerformed(evt);
+            }
+        });
 
         btnCancelar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/cesar/renda/view/icon/close_24.png"))); // NOI18N
         btnCancelar.setText("Cancelar");
@@ -152,6 +160,13 @@ public class ApartamentoNew extends javax.swing.JInternalFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnGuardarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuardarActionPerformed
+        // TODO add your handling code here:
+        new ApartamentoController().registarApartamento(
+            new Apartamento(Integer.valueOf(txtNumQuartos.getText()),txtArea.getText(),txtPiso.getText(), txtTipo.getText(),txaDescricao.getText(), txtRefQuarto.getText())
+        );
+    }//GEN-LAST:event_btnGuardarActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

@@ -43,6 +43,7 @@ public class ApartamentoServiceImpl implements ApartamentoService {
         return dao.update(apartamento);
     }
 
+    
     @Override
     public Apartamento get(int id) {
         if(id <= 0 ){

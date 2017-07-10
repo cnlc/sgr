@@ -1,0 +1,13 @@
+----------------------------------------------------------------
+Mon Jul 10 18:26:02 CVT 2017:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.13.1.1 - (1765088): instance a816c00e-015d-2df7-36a5-000004a386d8 
+on database directory /home/cesar/NetBeansProjects/cesar/sgr/renda_pai with class loader sun.misc.Launcher$AppClassLoader@1540e19d 
+Loaded from file:/home/cesar/NetBeansProjects/cesar/sgr/lib/derby.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_131-8u131-b11-0ubuntu1.16.10.2-b11
+user.dir=/home/cesar/NetBeansProjects/cesar/sgr
+os.name=Linux
+os.arch=amd64
+os.version=4.8.0-56-generic
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''
